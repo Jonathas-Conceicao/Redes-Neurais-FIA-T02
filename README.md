@@ -12,7 +12,7 @@ apresentado no apêndice I, tomando por convenção o valor -1 para óleo perten
 valor 1 para óleo pertencente à classe P2. Para tanto, o neurônio constituinte do Perceptron terá
 então três entradas e uma saída conforme ilustrado na figura abaixo. 
 
-[Arquitetura do Perceptron para o projeto prático](res/Arq_Perceptron.png)  
+![Arquitetura do Perceptron para o projeto prático](res/Arq_Perceptron.png)  
 **Figura 1: Arquitetura do Perceptron para o projeto prático**
 
 ## Exercício
