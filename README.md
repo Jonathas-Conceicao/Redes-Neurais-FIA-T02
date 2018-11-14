@@ -62,34 +62,34 @@ item 1.
   <tr>
     <th>Amostra</th><th>x1</th><th>x2</th><th>x3</th><th>Y(T1)</th><th>Y(T2)</th><th>Y(T3)</th><th>Y(T4)</th><th>Y(T5)</th> </tr>
   <tr>
-    <td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>1</td><td>-0,3665</td><td>0,0620</td><td>5,9891</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>2</td><td>-0,7842</td><td>1,1267</td><td>5,5912</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>3</td><td>0,3012</td><td>0,5611</td><td>5,8234</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>4</td><td>0,7757</td><td>1,0648</td><td>8,0677</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>5</td><td>0,1570</td><td>0,8028</td><td>6,3040</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>6</td><td>-0,7014</td><td>1,0316</td><td>3,6005</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>7</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>7</td><td>0,3748</td><td>0,1536</td><td>6,1537</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>8</td><td>-0,6920</td><td>0,9404</td><td>4,4058</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>9</td><td>-1,3970</td><td>0,7141</td><td>4,9263</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
   <tr>
-    <td>10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>10</td><td>-1,8842 </td><td>0,2805</td><td>1,2548</td><td></td><td></td><td></td><td></td><td></td>
   </tr>
 </table>
 
