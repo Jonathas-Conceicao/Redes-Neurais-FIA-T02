@@ -7,8 +7,8 @@ def habbsrule(weight, rate, a, b):
 
 class perceptron:
 	def __init__(self, length, rate):
-		# weights = [float('%.4f' % random()) for _ in range(0, length)]
-		weights = [float('%.4f' % uniform(-1, 1)) for _ in range(0, length)]
+		weights = [float('%.4f' % random()) for _ in range(0, length)]
+		# weights = [float('%.4f' % uniform(-1, 1)) for _ in range(0, length)]
 		self.weights = weights
 		self.length = length
 		self.epocas = 0
@@ -35,7 +35,6 @@ class perceptron:
 
 	def updateWeight(self, sData, sExpected):
 		self.epocas += 1
-		print "for ", sData, ": ", sExpected, " <> ", self.calculate(sData)
 		self.weights = [habbsrule(w, self.learnRate, self.calculate(sData), sExpected)
 										for w in self.weights]
 		return
@@ -65,15 +64,23 @@ def parseLine(line):
 
 def compare(exp, res):
 	equals = [r for (e, r) in zip(exp, res) if e == r]
-	return '%.02f%%' % ((len(equals)*100)/len(res))
+	return ((len(equals)*100)/len(res))
 
 # test
 t = perceptron(3, 0.01)
-print 'Pesos pre treinamento: ', t.getWeights()
 (datas, desireds) = parseInput('res/anexo1.txt')
+
+print 'Pesos pre treinamento: ', t.getWeights()
+oResults = t.calculateAll(datas)
+print 'Esperado : ', desireds
+print 'Calculado: ', oResults
+print 'Taxa de acerto: ', '%.02f%%' % compare(desireds, oResults)
+
 t.train (datas, desireds)
 print 'Pesos pos treinamento: ', t.getWeights()
-results = t.calculateAll(datas)
-print 'In : ', desireds
-print 'Out: ', results
-print 'Rate: ', compare(desireds, results)
+
+nResults = t.calculateAll(datas)
+print 'Esperado : ', desireds
+print 'Calculado: ', nResults
+print 'Taxa de acerto: ', '%.02f%%' % compare(desireds, nResults)
+print 'Taxa de mudanca: ', '%.02f%%' % (100 - compare(oResults, nResults))
