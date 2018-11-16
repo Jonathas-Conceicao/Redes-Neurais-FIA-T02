@@ -25,9 +25,10 @@ class perceptron:
 		return
 
 	def calculate(self, sData):
-		vs = [(lambda x, y: x * y)(a, b) for (a, b) in zip(sData, self.weights)]
+		vs = [d*w for (d, w) in zip(sData, self.weights)]
+		rd = reduce((lambda x, y: x * y), vs)
 		# return sum(vs)/sum(self.weights)
-		return sign(sum(vs)/sum(self.weights))
+		return sign(rd)
 
 	def calculateAll(self, data):
 		return [self.calculate(d) for d in data]
@@ -62,11 +63,17 @@ def parseLine(line):
 		pass
 	return (args, int(float(w[-1])))
 
+def compare(exp, res):
+	equals = [r for (e, r) in zip(exp, res) if e == r]
+	return '%.02f%%' % ((len(equals)*100)/len(res))
+
 # test
 t = perceptron(3, 0.01)
 print 'Pesos pre treinamento: ', t.getWeights()
 (datas, desireds) = parseInput('res/anexo1.txt')
 t.train (datas, desireds)
 print 'Pesos pos treinamento: ', t.getWeights()
+results = t.calculateAll(datas)
 print 'In : ', desireds
-print 'Out: ', t.calculateAll(datas)
+print 'Out: ', results
+print 'Rate: ', compare(desireds, results)
