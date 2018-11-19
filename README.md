@@ -1,6 +1,8 @@
 # Redes-Neurais-FIA-T02
 Segundo trabalho prático da disciplina de Introdução a Inteligência Artificial.
 
+#### Alunos: Jonathas Conceição; Guilherme Souza; Mateus Schmalfuss.
+
 ## Enunciado:
 Pela análise de um processo de destilação fracionada de petróleo observou-se que determinado óleo
 poderia ser classificado em duas classes de pureza {P1 e P2} a partir da medição de três grandezas
@@ -35,19 +37,29 @@ iniciais não sejam os mesmos. O conjunto de treinamento encontra-se no [anexo](
     <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td></td>
   </tr>
   <tr>
-    <td>T1</td><td>-1.0000</td><td>0.5634</td><td>0.356</td><td>0.4092</td><td>-1.0000</td><td>0.9516</td><td>1.3682</td><td>-0.4459</td><td>107</td>
+    <td>T1</td><td>0.4016<\td><td>0.4429<\td><td>0.44<\td><td>0.0817<\td>
+               <td>1.6616<\td><td>1.4676<\td><td>2.1572<\td><td>-0.7337<\td>
+               <td>161<\td>
   </tr>
   <tr>
-    <td>T2</td><td>-1.0000</td><td>0.2234</td><td>0.822</td><td>0.4269</td><td>1.0000</td><td>0.9301</td><td>1.4135</td><td>-0.4453</td><td>85</td>
+    <td>T2</td><td>0.5278<\td><td>0.4484<\td><td>0.1016<\td><td>0.9047<\td>
+               <td>1.9078<\td><td>1.3516<\td><td>1.9892<\td><td>-0.6799<\td>
+               <td>160<\td>
   </tr>
   <tr>
-    <td>T3</td><td>1.0000</td><td>0.3069</td><td>0.0803</td><td>0.5869</td><td>-1.0000</td><td>0.9324</td><td>1.4149</td><td>-0.4461</td><td>117</td>
+    <td>T3</td><td>0.7506<\td><td>0.2206<\td><td>0.0162<\td><td>0.2437<\td>
+               <td>2.0406<\td><td>1.2912<\td><td>1.9018<\td><td>-0.6501<\td>
+               <td>155<\td>
   </tr>
   <tr>
-    <td>T4</td><td>1.0000</td><td>0.469</td><td>0.1863</td><td>0.6599</td><td>-1.0000</td><td>0.9319</td><td>1.4153</td><td>-0.4458</td><td>115</td>
+    <td>T4</td><td>0.1111<\td><td>0.0192<\td><td>0.6143<\td><td>0.0954<\td>
+               <td>1.5311<\td><td>1.5286<\td><td>2.2354<\td><td>-0.7623<\td>
+               <td>158<\td>
   </tr>
   <tr>
-    <td>T5</td><td>1.0000</td><td>0.3789</td><td>0.5051</td><td>0.3436</td><td>1.0000</td><td>0.9385</td><td>1.3891</td><td>-0.4453</td><td>91</td>
+    <td>T5</td><td>0.4376<\td><td>0.0287<\td><td>0.7302<\td><td>0.8884<\td>
+               <td>1.8076<\td><td>1.3908<\td><td>2.066<\td><td>-0.7016<\td>
+               <td>142<\td>
   </tr>
 </table>
 
@@ -102,10 +114,11 @@ Como a geração dos pesos se da por meio aleatório, isso faz com que o numero 
 
 5) Para a aplicação em questão, discorra se é possível afirmar se as suas classes são
 linearmente separáveis.
-(Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas )
 
 As classes são linearmente separaveis na medida que usamos o valor -5 como separatriz, pois tal valor separa em duas clases de valores os resultados calculados pela rede. 
 
-# Anexo
+## Anexo
 
 [Conjunto de treinamento](res/anexo1.txt)
+
+###### (Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas )
