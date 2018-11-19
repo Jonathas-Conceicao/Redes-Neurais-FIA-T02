@@ -35,7 +35,7 @@ iniciais não sejam os mesmos. O conjunto de treinamento encontra-se no [anexo](
     <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td>w0</td> <td>w1</td> <td>w2</td> <td>w3</td> <td></td>
   </tr>
   <tr>
-    <td>T1</td><td>-1.0000</td><td>0.5634</td><td>0.356</td><td>0.4092</td><td>-1.0000</td><td>0.9516</td><td>1.3682</td><td>-0.4459</td><td>107</td><td></td><td></td>
+    <td>T1</td><td>-1.0000</td><td>0.5634</td><td>0.356</td><td>0.4092</td><td>-1.0000</td><td>0.9516</td><td>1.3682</td><td>-0.4459</td><td>107</td>
   </tr>
   <tr>
     <td>T2</td><td>-1.0000</td><td>0.2234</td><td>0.822</td><td>0.4269</td><td>1.0000</td><td>0.9301</td><td>1.4135</td><td>-0.4453</td><td>85</td>

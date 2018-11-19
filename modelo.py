@@ -9,16 +9,14 @@ class perceptron:
 	def __init__(self, length, rate, maxEpocas):
 		weights = [float('%.4f' % random()) for _ in range(0, length)]
 		self.weights = weights
-		self.length = length
 		self.epocas = 0
 		self.learnRate = rate
 		self.maxEpocas = maxEpocas
 		pass
 
-	def getWeights(self):   return self.weights
-	def getEpocas(self):    return self.epocas
-	def getLearnRate(self): return self.learnRate
-	def atMaxEpocas(self):  return self.epocas >= self.maxEpocas
+	def getWeights(self):  return self.weights
+	def getEpocas(self):   return self.epocas
+	def atMaxEpocas(self): return self.epocas >= self.maxEpocas
 
 	def train(self, data, expected):
 		error = True
