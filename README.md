@@ -98,9 +98,13 @@ item 1.
 4) Explique por que o número de épocas de treinamento , em relação a esta aplicação, varia
 cada vez que executamos o treinamento do Perceptron.
 
+Como a geração dos pesos se da por meio aleatório, isso faz com que o numero de épocas varie a partir de tais pesos. Pois dependendo dos pesos gerados ele pode levar leva mais ou menos interações para convergirem, os pesos sempre convergem para valores semelhantes.
+
 5) Para a aplicação em questão, discorra se é possível afirmar se as suas classes são
 linearmente separáveis.
 (Exercício do livro: Redes neurais artificiais para engenharia e ciências aplicadas )
+
+As classes são linearmente separaveis na medida que usamos o valor -5 como separatriz, pois tal valor separa em duas clases de valores os resultados calculados pela rede. 
 
 # Anexo
 
