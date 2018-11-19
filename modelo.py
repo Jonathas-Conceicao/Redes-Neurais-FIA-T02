@@ -1,13 +1,13 @@
 from random import uniform, random
 
-def sign(n): return 1 if n > -2 else -1
+def sign(n): return 1 if n > -5 else -1
 
 def habbsrule(weight, rate, a, b):
 	return float('%.4f' % (weight + rate*a*b))
 
 class perceptron:
 	def __init__(self, length, rate, maxEpocas):
-		weights = [float('%.4f' % random()) for _ in range(0, length)]
+		weights = [float('%.4f' % random()) for _ in range(0, length + 1)]
 		self.weights = weights
 		self.epocas = 0
 		self.learnRate = rate
@@ -30,7 +30,7 @@ class perceptron:
 		return
 
 	def calculate(self, sData):
-		vs = [d*w for (d, w) in zip(sData, self.weights)]
+		vs = [d*w for (d, w) in zip([-1] + sData, self.weights)]
 		rd = reduce((lambda x, y: x + y), vs)
 		# return sum(vs)/sum(self.weights)
 		return sign(rd)
@@ -43,7 +43,7 @@ class perceptron:
 		if curr == sExpected:
 			return False
 		self.weights = [habbsrule(w, self.learnRate, x, sExpected)
-										for (w, x) in zip(self.weights, sData)]
+										for (w, x) in zip(self.weights, [-1] + sData)]
 		return True
 	pass
 
@@ -86,7 +86,7 @@ def compare(exp, res):
 	return ((len(equals)*100)/len(res))
 
 # Execucao
-t = perceptron(3, 0.01, 500)
+t = perceptron(3, 0.01, 2000)
 (datas, desireds) = parseForTraining('res/anexo1.txt')
 
 print '<< Comecando Fase de Treinamento >>'
